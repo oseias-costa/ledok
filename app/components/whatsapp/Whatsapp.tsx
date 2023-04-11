@@ -3,11 +3,12 @@ import Image from 'next/image';
 import React from 'react'
 import styled from 'styled-components';
 import WhatsSVG from '../../../public/whatsapp.svg'
+import { content } from '../global/_content';
 
 export default function Whatsapp() {
   return (
     <Whats>
-        <a href='https://wa.me/#'  target='_blank'>
+        <a href={content.link} target='_blank'>
             <WhatsIcon src={WhatsSVG} alt='Link para o WhatsApp Ledok' />    
         </a>
     </Whats>

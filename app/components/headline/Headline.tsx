@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Image from "next/image";
 import HeadlineImg from "../../../public/headline-image.png";
 import { CustomButton } from "../global/CustomButton";
+import { content } from "../global/_content";
 
 export default function Headline() {
   return (
@@ -14,7 +15,7 @@ export default function Headline() {
           Não se preocupe com os custos iniciais, aluguel de placas de LED Ledok
           tem incluso suporte completo e manutenção.
         </p>
-        <CustomButton href="#" headline={true}>Entrar em contato</CustomButton>
+        <CustomButton href={content.link} headline={true} target='_blank'>Entrar em contato</CustomButton>
       </Div>
     </Container>
   );
@@ -27,9 +28,6 @@ const Container = styled.section`
   justify-content: center;
   flex-wrap: wrap;
   z-index: -2;
-  @media(max-width: 740px){
-    padding: 20px;
-  }
 `;
 
 const Img = styled(Image)`
@@ -51,6 +49,7 @@ const Div = styled.div`
   }
   @media(max-width: 740px){
     text-align: center;
-    padding-bottom: 63px;
+    margin-bottom: 63px;
+    padding: 20px;
   }
 `;

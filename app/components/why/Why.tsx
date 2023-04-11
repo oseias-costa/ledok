@@ -2,6 +2,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 import { CustomButton } from "../global/CustomButton";
+import { content } from "../global/_content";
 import { data } from "./_data";
 
 export default function Why() {
@@ -19,7 +20,7 @@ export default function Why() {
     <Container id='PorqueAlugar'>
       <h2>Porque alugar da ledok?</h2>
       <WhyBlocks>{Blocks}</WhyBlocks>
-      <CustomButton headline={false}>Quero mais informações</CustomButton>
+      <CustomButton headline={false} href={content.link}>Quero mais informações</CustomButton>
     </Container>
   );
 }
@@ -57,6 +58,10 @@ const Block = styled.div`
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 11pt;
+  }
+
+  @media(max-width: 740px){
+    text-align: center;
   }
 `;
 

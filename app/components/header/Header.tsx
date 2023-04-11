@@ -21,7 +21,7 @@ const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: #fff9f9;
+  background: #fff;
   box-shadow: 0px 1px 10px #ee1b23;
   z-index: 10;
 `;

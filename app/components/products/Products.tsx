@@ -2,6 +2,7 @@ import Image from "next/image";
 import styled from "styled-components";
 import Placa from "../../../public/placa.png";
 import { CustomButton } from "../global/CustomButton";
+import { content } from "../global/_content";
 
 export default function Products() {
   return (
@@ -13,7 +14,7 @@ export default function Products() {
           qualidade para postos com recursos avançados para uma melhor
           eficiência e economia.
         </p>
-        <CustomButton headline={false}>Quero Conhecer</CustomButton>
+        <CustomButton headline={false} href={content.link}>Quero Conhecer</CustomButton>
       </Description>
       <Img src={Placa} alt="Ledok" />
     </Container>
