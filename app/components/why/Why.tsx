@@ -33,7 +33,10 @@ const Container = styled.section`
   align-items: center;
 
   h2 {
+    text-align: center;
     padding-bottom: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 `;
 
