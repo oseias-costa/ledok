@@ -16,6 +16,7 @@ h1 {
   font-family: var(--font-lemon-milk);
   font-weight: 300;
   color: #FEFEFE;
+  font-size: 32px;
 }
 
 h2 {

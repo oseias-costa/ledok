@@ -40,16 +40,22 @@ const Img = styled(Image)`
 `;
 
 const Div = styled.div`
-  max-width: 450px;
+
+  h1 {
+    max-width: 550px;
+  }
   p {
     color: #fefefe;
     font-weight: 300;
     padding-top: 20px;
     padding-bottom: 20px;
+    max-width: 450px;
   }
   @media(max-width: 740px){
     text-align: center;
     margin-bottom: 63px;
     padding: 20px;
+    position: relative;
+    bottom: 30px;
   }
 `;
