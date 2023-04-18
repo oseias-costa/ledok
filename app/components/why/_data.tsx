@@ -7,21 +7,21 @@ export const data = [
     id: 1,
     title: "redução de custos iniciais",
     content:
-      "Ao alugar uma placa de precificação em LEDs, o posto não precisa investir um grande valor inicial na compra da placa. Em vez disso, o posto pode optar por um contrato de aluguel com prestações mensais mais acessíveis.",
+      "Trabalhamos com locações de Placa de Precificação em LEDs, portanto o seu negócio não precisa investir alto na compra da placa. Em vez disso, faça a opção por um contrato de aluguel com prestações ajusadas para a necessidade de seu Posto.",
     image: Reducer,
   },
   {
     id: 2,
     title: "Manutenção e suporte",
     content:
-      "O posto terá acesso a serviços de manutenção e suporte de fornecedores especializados. Isso pode reduzir a necessidade de manutenção e reparos no posto, o que pode resultar em economia de custos adicionais.",
+      "Seu Negócio terá acesso a serviços de manutenção e suporte de equipe especializada, sem custo algum. Isso irá reduzir a necessidade de manutenção e reparos na Placa de Precificação em LEDs, gerando assim a confiança de um material de qualidade e com baixo custo.",
     image: Maintenance,
   },
   {
     id: 3,
     title: "Atualização tecnológica",
     content:
-      "A tecnologia por trás das placas de precificação em LEDs está em constante evolução, com a introdução de novos recursos e funcionalidades. O posto pode ter acesso a tecnologia atualizada sem a necessidade de substituir a placa a cada atualização.",
+      "A tecnologia por trás das placas de precificação em LEDs está em constante evolução, com a introdução de novos recursos e funcionalidades. Com nossas Placas alugadas tenha em seu Negócio sempre o melhor e mais moderno equipamento.",
     image: Technology,
   },
 ];

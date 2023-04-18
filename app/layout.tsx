@@ -7,7 +7,7 @@ import Meta from './components/global/Meta';
 
 export const metadata = {
   title: 'Ledok - Comunicação em Leds',
-  description: 'Ledok - Comunicação em Leds',
+  description: 'Ledok - Locações de Placa de Precificação em LEDs para seu Posto.',
 }
 
 const lemonMilk = localFont({
