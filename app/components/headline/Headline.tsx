@@ -4,11 +4,11 @@ import Image from "next/image";
 import HeadlineImg from "../../../public/headline-image.png";
 import { CustomButton } from "../global/CustomButton";
 import { content } from "../global/_content";
+import Slide from "./Slide";
 
 export default function Headline() {
   return (
     <Container>
-      <Img src={HeadlineImg} alt="LEDOK" />
       <Div>
         <h1>Economize tempo e dinheiro desde o primeiro dia</h1>
         <p>
@@ -17,6 +17,7 @@ export default function Headline() {
         </p>
         <CustomButton href={content.link} headline={true} target='_blank'>Entrar em contato</CustomButton>
       </Div>
+      <Slide />
     </Container>
   );
 }
@@ -27,7 +28,12 @@ const Container = styled.section`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  z-index: -2;
+  z-index: 1;
+  height: 400px;
+
+  @media(max-width: 900px){
+    height: 600px;
+  }
 `;
 
 const Img = styled(Image)`
@@ -40,6 +46,9 @@ const Img = styled(Image)`
 `;
 
 const Div = styled.div`
+  position: relative;
+  left: 320px;
+  z-index: 2;
 
   h1 {
     max-width: 550px;
@@ -57,5 +66,7 @@ const Div = styled.div`
     padding: 20px;
     position: relative;
     bottom: 30px;
+    left: 0px;
+    top: 160px;
   }
 `;

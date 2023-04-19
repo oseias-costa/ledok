@@ -16,6 +16,7 @@ export default function Whatsapp() {
 }
 
 const Whats = styled.div`
+    z-index: 100;
     position: fixed;
     bottom: 2em;
     right: 2em;
