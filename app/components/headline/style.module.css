@@ -1,0 +1,18 @@
+.img {
+    opacity: 0;
+    color: #fff;
+    transition: 0.8s;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 874.84px;
+    height: 400px;
+    @media(max-width: 900px){
+        width: 100%;
+        height: auto;
+    }
+}
+
+.show {
+    opacity: 1;
+}

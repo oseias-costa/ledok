@@ -1,32 +1,35 @@
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Plate1 from '../../../public/placa1.png'
 import Plate2 from '../../../public/placa2.png'
 import Plate3 from '../../../public/placa3.png'
+import style from './style.module.css'
 
 export default function Slide() {
-    const [counter, setCounter ] = useState(1)
-    setInterval(() => {
-        const plusCounter = counter + 1
-        setCounter(plusCounter)
-        if(counter > 2){
-            setCounter(1)
-        }
-    }, 3500)
+    const [ counter, setCounter ] = useState(1)
+
+    const increment = () => {
+        setCounter(counter < 3 ? counter + 1 : 1 )
+    }
+    
+        useEffect(() => {
+            const interval = setInterval(increment, 4000);
+            return () => clearInterval(interval);
+          }, [ counter ]);
+        
 
   return (
     <Container>
-        <Img src={Plate1} alt='Placa em LED - LEDOK' className={`img ${ counter === 1 && 'show'}`} />
+        <Img src={Plate1} alt='Placa em LED - LEDOK' className={`img ${ counter === 1 && 'show' }`} />
         <Img src={Plate2} alt='Placa em LED - LEDOK' className={`img ${ counter === 2 && 'show' }`} />
         <Img src={Plate3} alt='Placa em LED - LEDOK' className={`img ${ counter === 3 && 'show' }`} />
     </Container>
   )
 }
 
-const Container = styled.div`
-
-    .img {
+const Container = styled("div")`
+     .img {
         opacity: 0;
         color: #fff;
         transition: 0.8s;

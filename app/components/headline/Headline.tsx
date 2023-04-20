@@ -49,6 +49,8 @@ const Div = styled.div`
   position: relative;
   left: 320px;
   z-index: 2;
+  background-color: #000000;
+  padding: 50px;
 
   h1 {
     max-width: 550px;
