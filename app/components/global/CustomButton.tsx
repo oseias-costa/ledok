@@ -7,7 +7,7 @@ export const CustomButton = styled("a")<{headline: boolean}>`
   padding-left: 20px;
   color: #fefefe;
   font-family: var(--font-lemon-milk);
-  font-size: 10pt;
+  font-size: 12pt;
   text-decoration: none;
   background: #ee1b23;
   border: 1px solid #ee1b23;

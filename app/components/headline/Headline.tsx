@@ -10,7 +10,7 @@ export default function Headline() {
   return (
     <Container>
       <Div>
-        <h1>Economize tempo e dinheiro desde o primeiro dia</h1>
+        <h1>Alugue nossas placas de led e reduza seus custos operacionais de forma significativa </h1>
         <p>
           Não se preocupe com os custos iniciais, aluguel de placas de LED Ledok
           tem incluso suporte completo e manutenção.

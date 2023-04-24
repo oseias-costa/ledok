@@ -1,10 +1,9 @@
 import Image from 'next/image'
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Plate1 from '../../../public/placa1.png'
 import Plate2 from '../../../public/placa2.png'
 import Plate3 from '../../../public/placa3.png'
-import style from './style.module.css'
 
 export default function Slide() {
     const [ counter, setCounter ] = useState(1)
