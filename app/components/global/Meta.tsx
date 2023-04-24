@@ -1,9 +1,9 @@
 import Script from "next/script";
 
 export default function Meta() {
+  const metaId = '625378799025587'
   return (
     <>
-      {/* Global Site Code Pixel - Facebook Pixel */}
       <Script
         id="fb-pixel"
         strategy="afterInteractive"
@@ -17,7 +17,7 @@ export default function Meta() {
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', ${783299219796493});
+            fbq('init', ${metaId});
           `,
         }}
       />

@@ -42,9 +42,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GlobalStyle />
-      <Google />
-      <Meta />
       <body className={`${lemonMilk.variable} ${roboto.variable}`}>
+        <Meta />
+        <Google />
         <StyledComponentsRegistry>
           {children}
         </StyledComponentsRegistry>
