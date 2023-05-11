@@ -4,6 +4,7 @@ import { Roboto } from 'next/font/google';
 import { GlobalStyle } from './GlobalStyle';
 import Google from './components/global/Google';
 import Meta from './components/global/Meta';
+import GoogleBody from './components/global/GoogleBody';
 
 export const metadata = {
   title: 'Ledok - Comunicação em Leds',
@@ -42,9 +43,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GlobalStyle />
-      <body className={`${lemonMilk.variable} ${roboto.variable}`}>
+      <head>
         <Meta />
         <Google />
+      </head>
+      <body className={`${lemonMilk.variable} ${roboto.variable}`}>
+        <GoogleBody />
         <StyledComponentsRegistry>
           {children}
         </StyledComponentsRegistry>
