@@ -10,8 +10,8 @@ export default function Footer() {
     <Container>
         <Img src={Logo} alt='Logo LEDOK - Comunição em Leds' />
         <Number>
-            <p>contato@ledok.com.br</p>
-            <p>(51)9 97959122</p>
+            <p>ledokadm@gmail.com</p>
+            <p>(51)9 96301314</p>
         </Number>
         <Midias>
             <p>Nos acompanhe :</p>
